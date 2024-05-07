@@ -1,0 +1,239 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    border:0px;
+    text-decoration: none;
+    font-family: OpenSans;
+}
+@font-face {
+    font-family: OpenSans;
+    src: url("/fonts/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+.header{
+    padding: 40px 0px 40px 0px;
+    .header_logo{
+        margin-left: 200px;
+    }
+}
+.hero-container{
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px -300px;
+    height: 646px;
+    .hero-container_info{
+        margin-left: 195px;
+        .info_title{
+            font-size: 64px;
+            color: white;
+            margin-bottom: 30.33px;
+            line-height: 89.60px;
+        }
+        .info_text{
+            font-size: 32px;
+            color: white;
+            line-height: 51.2px;
+        }
+    }
+}
+.main{
+    padding: 0px 200px 0px 200px;
+    .main_news{
+        .news_title{
+            line-height: 89.6px;
+            height: 90px;
+            font-size: 64px;
+            margin-top: 54.32px;
+            margin-bottom: 59.8px;
+        }
+        .news_container{
+            display: grid;
+            grid-template-columns: repeat(2, 740px);
+            grid-column-gap: 40px;
+            grid-row-gap: 82px;
+            margin-bottom: 83px;         
+            .block_news{
+                width: 740px;
+                .block_news_data{
+                    color: #6C6E7B;
+                    display: inline-flex;
+                    border-radius: 20px;
+                    font-size: 16px;
+                    padding: 6px 18px;
+                    line-height: 21.79px;
+                    background-color: #ECF2F5;
+                }
+                .block_news_title{
+                    height: 90px;
+                    font-size: 32px;
+                    margin-bottom: 30px;
+                    margin-top: 30px;
+                    color: #841844;
+                    line-height: 43.58px;
+                }
+                .block_news_text{
+                    font-size: 20px;
+                    line-height: 32px;
+                    height: 64px;
+                }
+                .news_button{
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 16px;
+                    padding: 16px 40px;
+                    line-height: 21.79px;
+                    border-radius: 50px;
+                    border: 2px solid #841844;
+                    color: #841844;
+                    transition-duration: 0.5s;
+                    margin-top: 30px;
+                    svg{
+                        margin-left: 10px;
+                        path{
+                            fill: #841844;
+                        }
+                    }
+                    &:hover{
+                        background-color: #841844;
+                        color: white;
+                        svg{
+                            path{
+                                fill: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .news_pagination{
+            display: flex;
+            justify-content: flex-end;
+            gap: 16px;
+            .pagination_button{
+                font-weight: 600px;
+                padding: 16px 23px;
+                font-size: 16px;
+                border: 2px solid #841844;
+                line-height: 21.79px;
+                border-radius: 100px;
+                transition-duration: 0.5s;
+                color: #841844;
+                &:hover{
+                    color: white;
+                    background-color: #841844;
+                }
+            }
+            .pagination_next{
+                display: flex;
+                padding: 16px 41px;
+                border: 2px solid #841844;
+                border-radius: 50px;
+                svg{
+                    path{
+                        fill: #841844;
+                    }
+                }
+                &:hover{
+                    background-color: #841844;
+                    transition-duration: 0.5s;
+                    svg{
+                        path{
+                            fill: white;
+                        }
+                    } 
+                }
+            }
+        }
+    }
+    .footer{
+        margin-top: 83px;
+        border-top: 1px solid #6C6E7B;
+        padding: 69.59px 0px;
+
+    }
+}
+.header_newspage{
+    border-bottom: 1px solid #6C6E7B;
+    padding: 40px 0px 40px 0px;
+    .header_logo{
+        margin-left: 200px;
+    }
+}
+.main_newspage{
+    padding: 0px 200px 0px 200px;
+    .path{
+        margin-top: 72.25px;
+        span{
+            color: #6C6E7B;
+        }
+    }
+    .newstitle{
+        font-size: 64px;
+        line-height: 89.6px;
+        margin-top: 21.86px;
+    }
+    .container_newspage{
+        display: flex;
+        margin-top: 63px;
+        .container-left{
+            margin-right: 40px;
+        }
+        .data{
+            color: #6C6E7B;
+            display: inline-flex;
+            border-radius: 20px;
+            font-size: 16px;
+            padding: 6px 18px;
+            line-height: 21.79px;
+            background-color: #ECF2F5;
+        }
+        .news_title{
+            margin-top: 40px;
+            margin-bottom: 40px;
+            line-height: 43.58px;
+            font-size: 32px;
+            color: #841844;
+        }
+        .news_text{
+            p{
+                margin-top: 22px;
+            }
+        }
+        .back_main{
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            padding: 16px 40px;
+            line-height: 21.79px;
+            border-radius: 50px;
+            border: 2px solid #841844;
+            color: #841844;
+            transition-duration: 0.5s;
+            margin-top: 30px;
+            svg{
+                margin-right: 10px;
+                path{
+                    fill: #841844;
+                }
+            }
+            &:hover{
+                background-color: #841844;
+                color: white;
+                svg{
+                    path{
+                        fill: white;
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        margin-top: 83px;
+        border-top: 1px solid #6C6E7B;
+        padding: 69.59px 0px;
+    }
+}
